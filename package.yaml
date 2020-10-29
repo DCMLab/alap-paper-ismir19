@@ -1,9 +1,9 @@
 name:                alap-paper
 version:             0.1.0.0
-github:              "chfin/chord-est-ismir19"
+github:              "DCMLab/alap-paper-ismir19"
 license:             BSD3
 author:              "Christoph Finkensiep"
-maintainer:          "chfin@chfin.de"
+maintainer:          "christoph.finkensiep@epfl.ch"
 copyright:           "Christoph Finkensiep"
 
 extra-source-files:
@@ -17,7 +17,7 @@ extra-source-files:
 # To avoid duplicated efforts in documentation and dealing with the
 # complications of embedding Haddock markup inside cabal files, it is
 # common to point users to the README.md file.
-description:         Please see the README on GitHub at <https://github.com/chfin/alap-paper#readme>
+description:         Please see the README on GitHub at <https://github.com/DCMLab/alap-paper-ismir19#readme>
 
 dependencies:
 - base >= 4.7 && < 5
