@@ -1,0 +1,18 @@
+\node[external node] (note0) at (0,0.0) {$\rtimes$};
+\node[note node] (note4) at (1,-1.5) {$7_\prime$};
+\node[note node] (note3) at (2,-1.0) {$1$};
+\node[note node] (note5) at (3,-1.5) {$\flat3$};
+\node[note node] (note6) at (4,-2.0) {$\flat2$};
+\node[note node] (note2) at (5,-0.5) {$1$};
+\node[external node] (note1) at (6,0.0) {$\ltimes$};
+\draw (note0) edge[external edge] node[operation] {init} (note1);
+\draw (note0) edge[external edge] node[operation] {dup$\to{}$} (note2);
+\draw (note0) edge[external edge] node[operation] {nb$\to{}$} (note3);
+\draw (note0) edge[external edge,surface edge] node[operation] {} (note4);
+\draw (note2) edge[external edge,surface edge] node[operation] {} (note1);
+\draw (note3) edge[] node[operation] {nb$\to{}$} (note2);
+\draw (note3) edge[surface edge] node[operation] {} (note5);
+\draw (note4) edge[surface edge] node[operation] {} (note3);
+\draw (note5) edge[] node[operation] {pass} (note2);
+\draw (note5) edge[surface edge] node[operation] {} (note6);
+\draw (note6) edge[surface edge] node[operation] {} (note2);
